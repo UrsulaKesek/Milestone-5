@@ -80,7 +80,7 @@ input[type="submit"] {
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:400px){
   .icon {
     background-image:linear-gradient( to right top, #04aaf6, #7dbbd8, #64c7ee, #1fb7f3, #06b6f6);
     width:50%;
