@@ -7,7 +7,7 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif "Nunito", sans-serif;
   background-image:linear-gradient( to right top, #99bbcb, #7dbbd8, #64c7ee, #1fb7f3, #04b8fa);
-  height:1000px;
+  height:800px;
 }
 .cities, .cities1{
 display: flex;
@@ -56,7 +56,7 @@ input[type="submit"] {
   border-radius: 2px;
   margin-top:0;
   margin-left: auto;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   margin-right: auto;
 }
 .icon {
@@ -85,6 +85,4 @@ input[type="submit"] {
     width:50%;
     height:100px;
   }
-  
-
 }
