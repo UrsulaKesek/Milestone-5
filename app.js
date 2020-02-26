@@ -21,12 +21,11 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=8
   let countryValue = data.sys.country;
   let descValue = data.weather[0].description;
 
-
+  main.innerHTML = nameValue;
   icon.innerHTML = `<img src = "icons/${iconValue}.png"/>`;
   desc.innerHTML = "Description:"+ " " +descValue;
   tempC.innerHTML = "Temperature:"+ " " +tempValueC + "&#8451";
   tempF.innerHTML = "in Fahrenheit:"+ " " +tempValueF + "&#8457";
-  main.innerHTML = nameValue;
   country.innerHTML = "Country:"+ " " +countryValue;
 
   input.value ="";
