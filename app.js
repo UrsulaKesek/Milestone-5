@@ -1,6 +1,6 @@
 setTimeout(() => {
   console.log("Greetings Earthling");
-},1000);
+},2000);
 
 let input = document.querySelector(".input_text");
 let main = document.querySelector("#name");

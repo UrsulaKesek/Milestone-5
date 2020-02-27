@@ -81,7 +81,10 @@ input[type="submit"] {
   font-weight: bold;
 }
 .loadingspinner {
-  display:hide;
+  /*display:none;*/
+  position: fixed;
+  top:50%;
+  left:50%;
   pointer-events: none;
   width: 2.5em;
   height: 2.5em;
@@ -89,22 +92,18 @@ input[type="submit"] {
   border-color: #eee;
   border-top-color:  white;
   border-right-color: white;
-  border-left-color: black;
-  border-bottom-color: black;
-
-
+  border-left-color: red;
+  border-bottom-color: red;
   border-radius: 50%;
   -webkit-animation: loadingspin 1s linear infinite;
           animation: loadingspin 1s linear infinite;
 }
-
 @-webkit-keyframes loadingspin {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
-
 @keyframes loadingspin {
   100% {
     -webkit-transform: rotate(360deg);
@@ -115,12 +114,6 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
 }
 @media screen and (max-width:400px){
   .icon {
