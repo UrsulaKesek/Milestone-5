@@ -1,6 +1,6 @@
 setTimeout(() => {
-  console.log("Greetings Earthling");
-},2000);
+ console.log("Greetings Earthlings");
+},1500);
 
 let input = document.querySelector(".input_text");
 let main = document.querySelector("#name");
@@ -10,8 +10,10 @@ let desc = document.querySelector(".desc");
 let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
+let spinner = document.querySelector("#spinner");
 
 button.addEventListener("click", function(name) {
+  spinner.removeAttribute('hidden');
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       input.value +
@@ -19,6 +21,7 @@ button.addEventListener("click", function(name) {
   )
     .then(response => response.json())
     .then(data => {
+      spinner.setAttribute('hidden','');
       console.log(data);
       let iconValue = data.weather[0].icon;
       let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
