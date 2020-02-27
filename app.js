@@ -1,3 +1,7 @@
+setTimeout(() => {
+  console.log("Greetings Earthling");
+},1000);
+
 let input = document.querySelector(".input_text");
 let main = document.querySelector("#name");
 let tempC = document.querySelector(".tempC");
@@ -29,9 +33,7 @@ button.addEventListener("click", function(name) {
       tempC.innerHTML = "Temperature:" + " " + tempValueC + "&#8451";
       tempF.innerHTML = "in Fahrenheit:" + " " + tempValueF + "&#8457";
       country.innerHTML = "Country:" + " " + countryValue;
-
       input.value = "";
     })
-
     .catch(err => alert("No such city name!"));
 });

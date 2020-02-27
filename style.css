@@ -61,7 +61,7 @@ input[type="submit"] {
 }
 .icon {
   background-image:linear-gradient( to right top, #04aaf6, #7dbbd8, #64c7ee, #1fb7f3, #06b6f6);
-  width:25%;
+  width:40%;
   height:100px;
 }
 .close {
@@ -79,6 +79,48 @@ input[type="submit"] {
   margin: 10px 0;
   font-size: 20px;
   font-weight: bold;
+}
+.loadingspinner {
+  display:hide;
+  pointer-events: none;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.4em solid transparent;
+  border-color: #eee;
+  border-top-color:  white;
+  border-right-color: white;
+  border-left-color: black;
+  border-bottom-color: black;
+
+
+  border-radius: 50%;
+  -webkit-animation: loadingspin 1s linear infinite;
+          animation: loadingspin 1s linear infinite;
+}
+
+@-webkit-keyframes loadingspin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingspin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 @media screen and (max-width:400px){
   .icon {
