@@ -1,6 +1,7 @@
 let timerID = setTimeout(function(){
-response (data);
+response.json (data);
 },4500);
+console.log(timerID);
 
 const spinner = document.getElementById("spinner");
 let input = document.querySelector(".input_text");
