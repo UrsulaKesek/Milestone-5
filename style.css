@@ -139,11 +139,7 @@ input[type="submit"] {
     transform: rotate(360deg);
   }
 }
-body {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+
 @media screen and (max-width: 400px) {
   .icon {
     background-image: linear-gradient(

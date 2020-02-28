@@ -1,6 +1,6 @@
-setTimeout(() => {
-fetch;
-},2500);
+let timerID = setTimeout(function(){
+console.log (data)
+},4500);
 
 let input = document.querySelector(".input_text");
 let main = document.querySelector("#name");
@@ -22,6 +22,7 @@ button.addEventListener("click", function(name) {
     .then(response => response.json())
     .then(data => {
       spinner.setAttribute('hidden','');
+
       console.log(data);
       let iconValue = data.weather[0].icon;
       let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
@@ -29,6 +30,7 @@ button.addEventListener("click", function(name) {
       let nameValue = data.name;
       let countryValue = data.sys.country;
       let descValue = data.weather[0].description;
+
 
       main.innerHTML = nameValue;
       icon.innerHTML = `<img src = "icons/${iconValue}.png"/>`;
@@ -39,4 +41,5 @@ button.addEventListener("click", function(name) {
       input.value = "";
     })
     .catch(err => alert("No such city name!"));
+
 });
