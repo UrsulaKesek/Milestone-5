@@ -1,6 +1,6 @@
-let timerId = setTimeout(function(){
- (name)
-},4500);
+let timerId = setTimeout(function() {
+  fetch;
+}, 4500);
 console.log(timerId);
 
 const spinner = document.getElementById("spinner");
@@ -14,7 +14,7 @@ let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
 
 button.addEventListener("click", function() {
-   spinner.removeAttribute('hidden');
+  spinner.removeAttribute("hidden");
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
       input.value +
@@ -22,8 +22,7 @@ button.addEventListener("click", function() {
   )
     .then(response => response.json())
     .then(data => {
-
-      spinner.setAttribute('hidden','');
+      spinner.setAttribute("hidden", "");
       console.log(data);
       let iconValue = data.weather[0].icon;
       let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
@@ -41,5 +40,4 @@ button.addEventListener("click", function() {
       input.value = "";
     })
     .catch(() => alert("No such city name!"));
-
 });
