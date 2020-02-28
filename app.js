@@ -1,4 +1,3 @@
-setTimeout(fetch,4500);
 
 const spinner = document.getElementById("spinner");
 let input = document.querySelector(".input_text");
@@ -10,10 +9,11 @@ let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
 
+
   input.addEventListener("keyup",function() {
     if(event.keyCode === 13){
       event.preventDefault();
-      document.querySelector(".submit").click();
+      document.querySelector(".submit").onclick();
     
   spinner.removeAttribute("hidden");
   fetch(
@@ -23,6 +23,7 @@ let country = document.querySelector(".country");
   )
     .then(response => response.json())
     .then(data => {
+      setTimeout(fetch,[Math.random() * 4500]);
       spinner.setAttribute("hidden", "");
       console.log(data);
       let iconValue = data.weather[0].icon;
@@ -40,8 +41,8 @@ let country = document.querySelector(".country");
       country.innerHTML = "Country:" + " " + countryValue;
       input.value = "";
     })
+    
     .catch(() => alert("No such city name!"));
-}
   }
-);
+});
   
