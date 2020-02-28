@@ -10,7 +10,11 @@ let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
 
-button.addEventListener("click", function() {
+  input.addEventListener("keyup",function() {
+    if(event.keyCode === 13){
+      event.preventDefault();
+      document.querySelector(".submit").click();
+    
   spinner.removeAttribute("hidden");
   fetch(
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -37,4 +41,7 @@ button.addEventListener("click", function() {
       input.value = "";
     })
     .catch(() => alert("No such city name!"));
-});
+}
+  }
+);
+  

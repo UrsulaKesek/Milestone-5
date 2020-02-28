@@ -30,7 +30,8 @@ body {
   text-align: center;
   margin: 30px auto;
 }
-input[type="submit"] {
+.input [type="submit"] {
+  display:none;
   height: 45px;
   padding: 10px 30px;
   background: white;
@@ -43,7 +44,7 @@ input[type="submit"] {
   outline: none;
 }
 
-.input input[type="text"] {
+.input [type="text"] {
   width: 450px;
   height: 45px;
   padding: 5px 10px;
