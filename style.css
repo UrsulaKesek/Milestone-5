@@ -5,16 +5,13 @@
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif "Nunito",
     sans-serif;
-  background-image: linear-gradient(
-    to right top,
-    #99bbcb,
-    #7dbbd8,
-    #64c7ee,
-    #1fb7f3,
-    #04b8fa
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#05e8f9),
+    to(#0549f5)
   );
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 1000px;
 }
 .cities,
@@ -72,13 +69,12 @@ body {
   margin-right: auto;
 }
 .icon {
-  background-image: linear-gradient(
-    to right top,
-    #04aaf6,
-    #7dbbd8,
-    #64c7ee,
-    #1fb7f3,
-    #06b6f6
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#05e8f9),
+    to(#0549f5)
   );
   width: 40%;
   height: 100px;
@@ -143,14 +139,13 @@ body {
 
 @media screen and (max-width: 400px) {
   .icon {
-    background-image: linear-gradient(
-      to right top,
-      #04aaf6,
-      #7dbbd8,
-      #64c7ee,
-      #1fb7f3,
-      #06b6f6
-    );
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#05e8f9),
+    to(#0549f5)
+  );
     width: 50%;
     height: 100px;
   }
