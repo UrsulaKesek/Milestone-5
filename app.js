@@ -7,6 +7,7 @@ let desc = document.querySelector(".desc");
 let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
+let img = document.getElementById("");
 
 input.addEventListener("keyup", function() {
   if (event.keyCode === 13) {
@@ -14,8 +15,8 @@ input.addEventListener("keyup", function() {
     document.querySelector(".submit").click();
 
     setTimeout(()=>{
-      alert("Choose another City!");
-    },2000);
+        alert("Choose another city")
+      },1000);
   
     spinner.removeAttribute("hidden");
     
