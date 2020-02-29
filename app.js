@@ -19,8 +19,11 @@ input.addEventListener("keyup", function() {
         input.value +
         "&appid=8cee7f2d45cd8c8754ca127ff2455bab"
     )
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => {
+        return response.json()
+        })
+      .then((data) => {
+      
         let min = 1000;
         let max = 10000;
         setTimeout(fetch, Math.random * (max - min + 1) + min);//max and min inclusive//
