@@ -13,6 +13,10 @@ input.addEventListener("keyup", function() {
     event.preventDefault();
     document.querySelector(".submit").click();
 
+    setTimeout(()=>{
+      alert("Choose another City!");
+    },2000);
+  
     spinner.removeAttribute("hidden");
     
     fetch(
@@ -45,4 +49,6 @@ input.addEventListener("keyup", function() {
 
       .catch(() => alert("No such city name!"));
   }
-});
+}
+
+);
