@@ -14,6 +14,7 @@ input.addEventListener("keyup", function() {
     document.querySelector(".submit").click();
 
     spinner.removeAttribute("hidden");
+    
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         input.value +
@@ -24,15 +25,11 @@ input.addEventListener("keyup", function() {
         })
       .then((data) => {
       
-        let min = 1000;
-        let max = 10000;
-        setTimeout(fetch, Math.random * (max - min + 1) + min);//max and min inclusive//
         spinner.setAttribute("hidden", "");
         console.log(data);
         let iconValue = data.weather[0].icon;
         let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
-        let tempValueF =
-          Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32;
+        let tempValueF = Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32;
         let nameValue = data.name;
         let countryValue = data.sys.country;
         let descValue = data.weather[0].description;
