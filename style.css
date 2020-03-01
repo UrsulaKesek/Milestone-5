@@ -32,16 +32,32 @@ body {
 .imagelinks{
   display:flex;
   flex-direction:row;
-  justify-content:space-evenly;
+  margin:15px;
 }
 a.visible{
   visibility:visible;
   text-decoration:none;
+  position: fixed;
+  top:410px;
+  left:25%;
+  background-color: rgba(248, 208, 7,1);
+  border-radius: 10px;
+  width:150px;
+  margin:10px;
+  padding:3px;
+
 }
 a.hidden{
   visibility:visible;
   text-decoration:none;
-
+  position: fixed;
+  top:410px;
+  left:63%;
+  background-color: rgba(248, 208, 7,1);
+  border-radius: 10px;
+  width:150px;
+  margin:10px;
+  padding:3px;
 }
 .input {
   text-align: center;

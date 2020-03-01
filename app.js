@@ -7,7 +7,7 @@ let desc = document.querySelector(".desc");
 let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
-const img = document.getElementById("city10");
+const img = document.getElementById("");
 const a = document.querySelector("a");
 console.log(img,a,spinner);
 
