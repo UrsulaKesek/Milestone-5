@@ -23,7 +23,7 @@ body {
   padding: 10px;
   background-color: rgba(248, 208, 7,1);
 }
-#city10:not([hidden]){
+#city10{
   visibility:visible;
 }
 .imagelinks{
@@ -35,8 +35,8 @@ a.visible{
   visibility:visible;
   text-decoration:none;
   position: fixed;
-  top:410px;
-  left:10%;
+  top:750px;
+  left:10px;
   background-color: rgba(248, 208, 7,1);
   border-radius: 10px;
   width:150px;
@@ -52,8 +52,8 @@ a.hidden{
   visibility:visible;
   text-decoration:none;
   position: fixed;
-  top:410px;
-  left:80%;
+  top:750px;
+  left:100px;
   background-color: rgba(248, 208, 7,1);
   border-radius: 10px;
   width:150px;
@@ -189,4 +189,19 @@ a.hidden{
     width: 50%;
     height: 100px;
   }
-}
+  a.hidden{
+    visibility:visible;
+    text-decoration:none;
+    position: fixed;
+    top:700px;
+    left:10px;
+    background-color: rgba(248, 208, 7,1);
+    border-radius: 10px;
+    width:150px;
+    margin:10px;
+    padding-top:3px;
+    padding-left:20px;
+    padding-bottom:3px;
+    padding-right:6px;
+  }
+  }
