@@ -8,16 +8,17 @@ let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
 const img = document.getElementById("");
-const a = document.querySelector("a");
+const a = document.querySelector("a.visible");
 console.log(img,a,spinner);
 
-input.addEventListener("keyup", function() {
+input.addEventListener("keyup",function() {
   if (event.keyCode === 13) {
     event.preventDefault();
     document.querySelector(".submit").click();
+  
 
     setTimeout(()=>{
-      alert("Click on City Icons link"),
+      alert("Enter Full-screen and Click on City Icons link"),
       function setImageVisible(_Id,visible){
         a.style.visibility = (visible ? "visible":"hidden")
       }
