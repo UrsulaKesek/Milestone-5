@@ -19,9 +19,9 @@ input.addEventListener("keyup", function() {
     setTimeout(()=>{
       alert("Click on City Icons link"),
       function setImageVisible(_Id,visible){
-        img.style.visibility = (visible ? "visible":"hidden")
+        a.style.visibility = (visible ? "visible":"hidden")
       }
-    },500);
+    },1000);
     
     spinner.removeAttribute("hidden");
 

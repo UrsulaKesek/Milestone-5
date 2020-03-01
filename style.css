@@ -23,9 +23,6 @@ body {
   padding: 10px;
   background-color: rgba(248, 208, 7,1);
 }
-#city10{
-  visibility:hidden;
-}
 #city10:not([hidden]){
   visibility:visible;
 }
@@ -39,12 +36,16 @@ a.visible{
   text-decoration:none;
   position: fixed;
   top:410px;
-  left:25%;
+  left:10%;
   background-color: rgba(248, 208, 7,1);
   border-radius: 10px;
   width:150px;
   margin:10px;
-  padding:3px;
+  padding-top:3px;
+  padding-left:20px;
+  padding-bottom:3px;
+  padding-right:6px;
+
 
 }
 a.hidden{
@@ -52,12 +53,15 @@ a.hidden{
   text-decoration:none;
   position: fixed;
   top:410px;
-  left:63%;
+  left:80%;
   background-color: rgba(248, 208, 7,1);
   border-radius: 10px;
   width:150px;
   margin:10px;
-  padding:3px;
+  padding-top:3px;
+  padding-left:20px;
+  padding-bottom:3px;
+  padding-right:6px;
 }
 .input {
   text-align: center;
