@@ -1,4 +1,4 @@
-const spinner = document.getElementById("spinner");
+let spinner = document.getElementById("spinner");
 let input = document.querySelector(".input_text");
 let main = document.querySelector("#name");
 let tempC = document.querySelector(".tempC");
@@ -7,7 +7,9 @@ let desc = document.querySelector(".desc");
 let button = document.querySelector(".submit");
 let icon = document.querySelector(".icon");
 let country = document.querySelector(".country");
-let img = document.getElementById("");
+const img = document.getElementById("city10");
+const a = document.querySelector("a");
+console.log(img,a,spinner);
 
 input.addEventListener("keyup", function() {
   if (event.keyCode === 13) {
@@ -15,26 +17,29 @@ input.addEventListener("keyup", function() {
     document.querySelector(".submit").click();
 
     setTimeout(()=>{
-        alert("Choose another city")
-      },1000);
-  
-    spinner.removeAttribute("hidden");
+      alert("Click on City Icons link"),
+      function setImageVisible(_Id,visible){
+        img.style.visibility = (visible ? "visible":"hidden")
+      }
+    },500);
     
+    spinner.removeAttribute("hidden");
+
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         input.value +
         "&appid=8cee7f2d45cd8c8754ca127ff2455bab"
     )
-      .then((response) => {
-        return response.json()
-        })
-      .then((data) => {
-      
+      .then(response => {
+        return response.json();
+      })
+      .then(data => {
         spinner.setAttribute("hidden", "");
         console.log(data);
         let iconValue = data.weather[0].icon;
         let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
-        let tempValueF = Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32;
+        let tempValueF =
+          Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32;
         let nameValue = data.name;
         let countryValue = data.sys.country;
         let descValue = data.weather[0].description;
@@ -50,6 +55,5 @@ input.addEventListener("keyup", function() {
 
       .catch(() => alert("No such city name!"));
   }
-}
+});
 
-);
