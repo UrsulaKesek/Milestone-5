@@ -22,7 +22,7 @@ input.addEventListener("keyup",function() {
       function setImageVisible(_Id,visible){
         a.style.visibility = (visible ? "visible":"hidden")
       }
-    },1000);
+    },1500);
     
     spinner.removeAttribute("hidden");
 
