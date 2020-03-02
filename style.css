@@ -5,13 +5,14 @@
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif "Nunito",
     sans-serif;
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
     linear,
     left top,
     right bottom,
     from(#05e8f9),
     to(#0549f5)
   );
+  margin:0;
   height: 1000px;
 }
 .cities,
@@ -109,7 +110,7 @@ a.hidden{
   margin-right: auto;
 }
 .icon {
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
     linear,
     left top,
     right bottom,
@@ -118,12 +119,6 @@ a.hidden{
   );
   width: 40%;
   height: 100px;
-}
-.close {
-  float: right;
-  margin-top: -2px;
-  cursor: pointer;
-  margin-right: 20px;
 }
 .card h1 {
   padding: 1px 0px 2px 0px;
@@ -179,7 +174,7 @@ a.hidden{
 
 @media screen and (max-width: 400px) {
   .icon {
-    background-image: -webkit-gradient(
+    background: -webkit-gradient(
     linear,
     left top,
     right bottom,
@@ -189,11 +184,11 @@ a.hidden{
     width: 50%;
     height: 100px;
   }
-  a.hidden{
+  a.visible{
     visibility:visible;
     text-decoration:none;
     position: fixed;
-    top:700px;
+    top:765px;
     left:10px;
     background-color: rgba(248, 208, 7,1);
     border-radius: 10px;
