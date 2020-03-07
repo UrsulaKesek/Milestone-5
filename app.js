@@ -38,9 +38,10 @@ input.addEventListener("keyup",function() {
         spinner.setAttribute("hidden", "");
         console.log(data);
         let iconValue = data.weather[0].icon;
-        let tempValueC = Math.round(parseFloat(data.main.temp) - 273);
+        let tempValueC = (Math.round(parseFloat(data.main.temp) - 273).toFixed(0));
+      
         let tempValueF =
-          Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32;
+          (Math.round(parseFloat(data.main.temp) - 273) * 1.8 + 32).toFixed(0);
         let nameValue = data.name;
         let countryValue = data.sys.country;
         let descValue = data.weather[0].description;
