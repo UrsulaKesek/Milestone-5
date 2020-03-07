@@ -5,7 +5,7 @@
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif "Nunito",
     sans-serif;
-    background: -webkit-gradient(
+  background: -webkit-gradient(
     linear,
     left top,
     right bottom,
@@ -18,63 +18,61 @@ body {
     from(#05e8f9),
     to(#0549f5)
   );
-  margin:0;
+  width:100%;
   height: 1000px;
 }
 .cities,
 .cities1 {
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 10px;
-  background-color: rgba(248, 208, 7,1);
+  background-color: rgba(248, 208, 7, 1);
 }
-#city10{
-  visibility:visible;
+#city10 {
+  visibility: visible;
 }
-.imagelinks{
-  display:flex;
-  flex-direction:row;
-  margin:15px;
+.imagelinks {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
 }
-a.visible{
-  visibility:visible;
-  text-decoration:none;
+a.visible {
+  visibility: visible;
+  text-decoration: none;
   position: fixed;
-  top:750px;
-  left:10px;
-  background-color: rgba(248, 208, 7,1);
+  top: 750px;
+  left: 10px;
+  background-color: rgba(248, 208, 7, 1);
   border-radius: 10px;
-  width:150px;
-  margin:10px;
-  padding-top:3px;
-  padding-left:20px;
-  padding-bottom:3px;
-  padding-right:6px;
-
-
+  width: 150px;
+  margin: 10px;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-right: 6px;
 }
-a.hidden{
-  visibility:visible;
-  text-decoration:none;
+a.hidden {
+  visibility: visible;
+  text-decoration: none;
   position: fixed;
-  top:750px;
-  left:100px;
-  background-color: rgba(248, 208, 7,1);
+  top: 750px;
+  left: 100px;
+  background-color: rgba(248, 208, 7, 1);
   border-radius: 10px;
-  width:150px;
-  margin:10px;
-  padding-top:3px;
-  padding-left:20px;
-  padding-bottom:3px;
-  padding-right:6px;
+  width: 150px;
+  margin: 10px;
+  padding-top: 3px;
+  padding-left: 20px;
+  padding-bottom: 3px;
+  padding-right: 6px;
 }
 .input {
   text-align: center;
   margin: 30px auto;
 }
 .input [type="submit"] {
-  display:none;
+  display: none;
   height: 45px;
   padding: 10px 30px;
   background: white;
@@ -115,7 +113,7 @@ a.hidden{
   margin-right: auto;
 }
 .icon {
-    background: -webkit-gradient(
+  background: -webkit-gradient(
     linear,
     left top,
     right bottom,
@@ -128,7 +126,7 @@ a.hidden{
     from(#05e8f9),
     to(#0549f5)
   );
-  width: 40%;
+  width: 100%;
   height: 100px;
 }
 .card h1 {
@@ -152,7 +150,7 @@ a.hidden{
   align-items: center;
 }
 #spinner::after {
-  content:"";
+  content: "";
   width: 80px;
   height: 80px;
   border: 0.4em solid transparent;
@@ -186,34 +184,34 @@ a.hidden{
 @media screen and (max-width: 768px) {
   .icon {
     background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#05e8f9),
-    to(#0549f5)
-  );
-  background: linear-gradient(
-    left top,
-    right bottom,
-    from(#05e8f9),
-    to(#0549f5)
-  );
+      linear,
+      left top,
+      right bottom,
+      from(#05e8f9),
+      to(#0549f5)
+    );
+    background: linear-gradient(
+      left top,
+      right bottom,
+      from(#05e8f9),
+      to(#0549f5)
+    );
     width: 50%;
     height: 100px;
   }
-  a.visible{
-    visibility:visible;
-    text-decoration:none;
+  a.visible {
+    visibility: visible;
+    text-decoration: none;
     position: fixed;
-    top:765px;
-    left:10px;
-    background-color: rgba(248, 208, 7,1);
+    top: 765px;
+    left: 10px;
+    background-color: rgba(248, 208, 7, 1);
     border-radius: 10px;
-    width:150px;
-    margin:10px;
-    padding-top:3px;
-    padding-left:20px;
-    padding-bottom:3px;
-    padding-right:6px;
+    width: 150px;
+    margin: 10px;
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    padding-right: 6px;
   }
-  }
+}
