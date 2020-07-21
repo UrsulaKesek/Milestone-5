@@ -214,4 +214,8 @@ a.hidden {
     padding-bottom: 3px;
     padding-right: 6px;
   }
+  .cities,
+  .cities1 {
+    overflow: hidden;
+  }
 }
